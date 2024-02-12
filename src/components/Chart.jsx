@@ -13,8 +13,8 @@ const Chart = ({ findings }) => {
             >
               <span> {item} </span>
               <span>
-                {Math.round(findings[item] * 1e3) / 1e3
-                  ? Math.round(findings[item] * 1e3) / 1e3
+                {Math.round(findings[item] * 1e2) / 1e2
+                  ? Math.round(findings[item] * 1e2) / 1e2
                   : findings[item]}
               </span>
             </li>

@@ -6,7 +6,7 @@ import ThemeIcon from "./ThemeIcon";
 const Header = ({ name }) => {
   return (
     <>
-      <div className="px-32">
+      <div>
         <h1>{name}</h1>
         <Search></Search>
       </div>

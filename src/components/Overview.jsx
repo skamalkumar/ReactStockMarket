@@ -4,10 +4,10 @@ import Card from "./Card";
 const Overview = ({ ticker, price, percentage }) => {
   return (
     <Card>
-      <div className="inline-block bg-indigo-200 rounded-md absolute top-2">
+      <div className="inline-block bg-indigo-200 rounded-md absolute top-2 ">
         <span>{ticker}</span>
       </div>
-      <div className="flex justify-around">
+      <div className="flex items-center justify-around ">
         <span>Price: {price}</span>
         <span> Percent Change: {percentage}%</span>
       </div>

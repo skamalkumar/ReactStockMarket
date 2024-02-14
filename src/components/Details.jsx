@@ -17,12 +17,12 @@ const Details = ({ details }) => {
 
   return (
     <Card>
-      <ul className="w-full h-full flex flex-col divide-y-2">
+      <ul className=" w-full h-full flex flex-col divide-y-2  overflow-y-scroll md:overflow-hidden">
         {Object.keys(detailsList).map((item) => {
           return (
             <li
               key={item}
-              className="flex-1 flex whitespace-pre-wrap justify-between items-center hover:bg-indigo-400 rounded-md"
+              className="flex-1 flex justify-between items-center hover:bg-indigo-400 rounded-md "
             >
               <span>{detailsList[item]}</span>
               <span>

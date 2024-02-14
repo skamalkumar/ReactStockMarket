@@ -4,12 +4,12 @@ import Card from "./Card";
 const Chart = ({ findings }) => {
   return (
     <Card>
-      <ul className="w-full h-full flex flex-col divide-y-2 overflow-y-auto">
+      <ul className="w-full h-full flex flex-col divide-y-2 overflow-y-auto ">
         {Object.keys(findings || {})?.map((item) => {
           return (
             <li
               key={item}
-              className="flex-1 flex justify-between items-center hover:bg-indigo-400 rounded-md"
+              className="flex-1 flex justify-between items-center hover:bg-indigo-400 rounded-md "
             >
               <span> {item} </span>
               <span>

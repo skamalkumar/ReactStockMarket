@@ -27,7 +27,7 @@ const Search = () => {
   };
 
   return (
-    <div className="flex items-center border-2 rounded-md relative z-50 w-96 bg-white">
+    <div className="flex items-center border-2 rounded-md relative z-50 w-76 bg-white">
       <input
         className="w-full px-4 py-2 focus:outline-none"
         type="text"
@@ -50,7 +50,7 @@ const Search = () => {
 
       <button
         onClick={updateBestMatches}
-        className="h-8 w-8 bg-indigo-600 rounded-md flex justify-center items-center m-1 p-2 transition duration-300 hover:ring-2 ring-indigo-400"
+        className="h-8 w-8 bg-indigo-600 rounded-md flex justify-center items-center m-1 p-2 transition1 duration1 hover:ring-2 ring-indigo-400"
       >
         <SearchIcon className="h-4 w-4 fill-gray-100"></SearchIcon>
       </button>

@@ -56,13 +56,13 @@ const Dashboard = () => {
 
   return (
     <div
-      className={`h-screen grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-5 md:grid-rows-4 xl:grid-rows-3 auto-rows-fr bg-white gap-6 p-10 
+      className={`h-screen grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-5 md:grid-rows-4 xl:grid-rows-3 auto-rows-fr bg-white gap-4 p-10 
       ${darkMode ? "light" : "dark"}`}
     >
       <div className="header col-span-1 xl:col-span-3 row-span-1 flex items-center">
         <Header name={stockDetails.name}></Header>
       </div>
-      <div className="chart md:col-span-2 row-span-4">
+      <div className="chart md:col-span-2 row-span-5 mt-10 ">
         <Chart findings={financial.metric}>Chart</Chart>
       </div>
       <div className="details">
@@ -70,7 +70,7 @@ const Dashboard = () => {
           Details
         </Overview>
       </div>
-      <div className="overview row-span-4 xl:row-span-4 mt-5 auto-rows-fr">
+      <div className=" overview row-span-4 xl:row-span-4 mt-5 auto-rows-fr">
         <Details details={stockDetails}></Details>
       </div>
     </div>
